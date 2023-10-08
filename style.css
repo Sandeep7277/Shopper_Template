@@ -1,0 +1,770 @@
+body{
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.header1{
+    display: grid;
+    grid-template-columns: 2fr 4fr 4fr 2fr;
+    background-color: #ddd;
+    justify-items: start;
+    justify-content: start;
+    align-items:center ;
+    height: 50px;
+    padding-left:5% ;
+    /* padding-right: 5%; */
+
+}
+.free-shipping{
+    display: flex;
+    padding: 5px;
+    font-size: 11px;
+}
+.bi-truck{
+    margin-right: 10px;
+    font-size: 15px;
+}
+
+/* CSS For Hearder List */
+.select-box{
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    font-size: 14px;
+
+}
+/* Country CSS */
+.country {
+    width: 130px;
+    border: none;
+    background-color: #ddd;
+    align-self: flex-end;
+
+}
+.country-head {
+    position: relative;
+    display: inline-block ;
+}
+.country-list{
+    display: none;
+    position:fixed ;
+    background-color: #fff;
+    min-width: 80px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+   
+
+}
+.country-list a{
+    padding: 10px 16px;
+    list-style-type: none;
+    color: black;
+    text-decoration: none;
+    display: block;
+    border-bottom: 1px solid #ddd;
+}
+
+.country-list a:hover{ background-color: #ddd;}
+.country-head:hover  .country-list{ display: block; }
+
+
+/* CSS for Currency */
+ .currency {
+    width: 65px;
+    border: none;
+    background-color: #ddd;
+}
+.currency-head {
+    position: relative;
+    display: inline-block;
+}
+.currency-list{
+    display: none;
+    position:absolute;
+    background-color: #fff;
+    min-width: 60px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+.currency-list a{
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    list-style-type: none;
+    border-bottom: 1px solid #ddd;
+
+}
+.currency-head:hover  .currency-list{
+    display: block;
+ }
+ .currency-list a:hover{
+    background-color: #ddd;
+ }
+
+ /* CSS For Language */
+ .lang {
+    width: 75px;
+    border: none;
+    background-color: #ddd;
+}
+.lang-head {
+    position: relative;
+    display: inline-block;
+}
+.lang-list{
+    display: none;
+    position:absolute;
+    background-color: #fff;
+    min-width: 60px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+.lang-list a{
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    list-style-type: none;
+    border-bottom: 1px solid #ddd;
+
+}
+.lang-head:hover  .lang-list{
+    display: block;
+ }
+ .lang-list a:hover{
+    background-color: #ddd;
+ }
+
+/* CSS for sfc */
+.sfc{
+    justify-self: center;
+}
+.sfc-head{
+    display: flex;
+    align-items:center;
+    font-size: 14px;
+}
+.sfc-head button{
+    width: 70px;
+    border: none;
+    background-color: #ddd;
+
+}
+
+/* CSS for Social Icons */
+.sicons{
+    display: flex;
+    /* justify-items: start; */
+        gap: 5px;
+}
+.sicons button{
+    border: none;
+    font-size: 25px;
+    background-color: #ddd;
+    color: gray;
+}
+
+/* CSS For Header2 */
+.header2{
+    display: grid;
+    grid-template-columns: 3fr 6fr 3fr;
+    background-color: #fff;
+    justify-items: start;
+    justify-content: start;
+    align-items:center ;
+    height: 100px;
+    padding-left:5% ;
+    padding-right: 5%;
+
+}
+.logo{
+    font-family:'Mulish', sans-serif;
+    font-size: 25px;
+}
+menu{
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    font-size: 15px;
+}
+.menu-head button{
+    width: 80px;
+    border: none;
+    background-color: #fff;
+    align-self: flex-start;
+    font-size: 15px;
+}
+.menu-head{
+    position: relative;
+    display: inline-block;
+    
+}
+.menu-list{
+    display: none;
+    position:absolute;
+    background-color: #fff;
+    min-width: 60px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+.menu-list a{
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    list-style-type: none;
+    border-bottom: 1px solid #ddd;
+}
+.menu-head:hover button{
+    color: red;
+}
+.menu-head:hover  .menu-list{
+    display: block;
+ }
+ .menu-list a:hover{
+    background-color: #ddd;
+ }
+
+ .micons{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.micons button{
+    border: none;
+    font-size: 15px;
+    background-color: #fff;
+    color: black;
+}
+.micons button:hover{
+    color: red;
+}
+.cart{
+    display: inline-flex;
+    position: relative;
+}
+.cart-items{
+    width: 16px;
+    height: 15px;
+    background-color: red;
+    border-radius: 20px;
+    font-size: 12px;
+    text-align: center;
+    color: #fff;
+    position: absolute;
+    left: 15px;
+    top: -5px;
+   
+}
+.menu-icons{
+    justify-self: end;
+}
+
+/* CCS for Header3 */
+article{
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    font-size: 13px;
+    font-family: Arial;
+    padding: 15px;
+
+
+}
+.bi-lightning-charge-fill{
+    color: gold;
+}
+/* CSS for section1 */
+.section1{
+    display: grid;
+    width: 100%;
+    grid-template-columns: 4fr 4fr 4fr;
+    margin-top: 15px;
+}
+.section1 .women{
+    background: url("Public/images/woman.jpeg") no-repeat center;
+    /* background-attachment: fixed; */
+    background-size: cover;
+    width: 100%;
+    height: 470px;
+    color: white;
+    font-size: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+
+}
+.section1 .women button{
+    width: 200px;
+    height: 50px;
+    border:none;
+    background-color: #fff;
+    font-size: 16px;
+    margin-bottom: -120px;
+}
+.bi-arrow-right{
+    margin-left: 10px;
+    font-size: large;
+}
+
+.section1 .men{
+    background: url("Public/images/man.jpeg") no-repeat center;
+    /* background-attachment: fixed; */
+    background-size: cover;
+    width: 100%;
+    height: 470px;
+    color: white;
+    font-size: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+
+}
+.section1 .men button{
+    width: 200px;
+    height: 50px;
+    border:none;
+    background-color: #fff;
+    font-size: 16px;
+    margin-bottom: -120px;
+}
+
+.section1 .kids{
+    background: url("Public/images/kid.jpeg") no-repeat center;
+    background-size: 140% 120% ;
+    width: 100%;
+    height: 470px;
+    color: white;
+    font-size: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+
+}
+.section1 .kids button{
+    width: 200px;
+    height: 50px;
+    border:none;
+    background-color: #fff;
+    font-size: 16px;
+    margin-bottom: -120px;
+}
+
+/* CSS for section2 */
+
+.section2-head{
+    width: 100%;
+    padding-top: 25px;
+    display: flex;
+    justify-content: center;
+
+}
+.section2{
+    display: flex;
+    justify-content: space-between;
+    width: 82%;
+    height: 80px;
+    border-bottom: 1px solid #ddd;
+}
+
+.section2 .shipping{
+display: flex;
+padding-left: 15px;
+padding-right: 15px;
+box-sizing: border-box;
+font-size: 14px;
+}
+.section2 .shipping .bi-truck{
+font-size: 18px;
+color: orangered;
+margin-right: 10px;
+}
+.section2 .shipping h5{
+margin-top: 0;
+margin-bottom: 10px;
+}
+.section2 .shipping p{
+margin-top: 0;
+color: grey;
+}
+.section2 .returns{
+    display: flex;
+    padding-left: 15px;
+    padding-right: 15px;
+    box-sizing: border-box;
+    font-size: 14px;
+}
+.section2 .returns .bi-repeat{
+    font-size: 18px;
+    color: orangered;
+    margin-right: 10px;
+    }
+    .section2 .returns h5{
+    margin-top: 0;
+    margin-bottom: 10px;
+    }
+    .section2 .returns p{
+    margin-top: 0;
+    color: grey;
+    }
+.section2 .secure{
+    display: flex;
+    padding-left: 15px;
+    padding-right: 15px;
+    box-sizing: border-box;
+    font-size: 14px;
+}
+.section2 .secure .bi-lock{
+    font-size: 20px;
+    color: orangered;
+    margin-right: 10px;
+    width: 20px;
+    fon
+    }
+    .section2 .secure h5{
+    margin-top: 0;
+    margin-bottom: 10px;
+    }
+    .section2 .secure p{
+    margin-top: 0;
+    color: grey;
+    }
+.section2 .style{
+    display: flex;
+    padding-left: 15px;
+    padding-right: 15px;
+    box-sizing: border-box;
+    font-size: 14px;
+}
+.section2 .style .bi-tag{
+    font-size: 20px;
+    color: orangered;
+    margin-right: 10px;
+    width: 20px;
+    fon
+    }
+    .section2 .style h5{
+    margin-top: 0;
+    margin-bottom: 10px;
+    }
+    .section2 .style p{
+    margin-top: 0;
+    color: grey;
+    }
+
+    .section3{
+        width: 100%;
+        /* height: 1100px; */
+        padding-top: 60px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+    }
+    .section3 .sec3-head{
+        width: 82%;
+        text-align: center;
+    }
+    .section3 .sec3-head h1{
+        font-size: 35px;
+        font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-weight:600;
+        margin: 0;
+    }
+    .sec-img1{
+        display: grid;
+        grid-template-columns: 4fr 8fr;
+        column-gap: 30px;
+        width: 82%;
+        margin-top: 50px;
+    }
+    .sec-img1 .bag-col{
+    background: url("Public/images/bag.jpg") no-repeat center;
+    background-size: cover ;
+    width: 100%;
+    height: 400px;
+    color: white;
+    font-size: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight:600;
+    }
+    .sec-img1 .bag-col button{
+    width: 200px;
+    height: 50px;
+    border:none;
+    background: none;
+    color: #fff;
+    font-size: 16px;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight:600;
+}
+
+
+.sec-img1 .printed-shirt{
+
+    background: url("Public/images/printed-shirt-1.png");
+    background-size: contain ;
+    background-position: right center;
+    background-repeat: no-repeat;
+    background-color: rgb(246, 246, 246);;
+    width: 100%;
+    height: 400px;
+    position: relative;
+    }
+
+.sec-img1 .printed-shirt .shirt-text{
+    text-align: left;
+    color: black;
+    font-size: 25px;
+    padding-left: 100px;
+    padding-top: 150px;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight:600;
+}
+.sec-img1 .printed-shirt .shirt-text span:last-child{
+    font-size: 16px;
+}
+ .save{
+    width: 100px;
+    height: 100px;
+    background: red;
+    border-radius: 50%;
+    position: absolute;
+    top: 20px;
+    right: 20px;    
+    color: #fff;
+    text-align: center;
+}
+.save > span{
+    position:relative;
+    top: 25px;
+    font-weight: bold;
+
+} 
+
+.save span:last-child{
+font-size: 25px;
+
+}
+
+.sec-img2{
+    display: grid;
+    grid-template-columns: 8fr 4fr;
+    column-gap: 30px;
+    width: 82%;
+    margin-top: 50px;
+}
+.sec-img2 .baasic-dress{
+    background: url("Public/images/basic-dress111.png");
+        background-size: contain;
+        background-position: right center;
+        background-repeat: no-repeat;
+        background-color: rgb(246, 246, 246);
+        width: 100%;
+        height: 400px;
+        position: relative;
+        color: black;
+        font-size: 25px;
+        text-align: left;
+        font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-weight:600;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .sec-img2 .baasic-dress > span{
+        padding-left: 80px;
+    }
+    .baasic-dress span:last-child{
+        font-size: 16px;
+    }
+
+    .Sweat-shirts{
+    background: url("Public/images/sweat.png") no-repeat center;
+    background-size: cover ;
+    background-color: #ddd;
+    width: 100%;
+    height: 400px;
+    color: white;
+    font-size: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight:600;
+    }
+    .Sweat-shirts span:last-child{
+        font-size: 16px;
+    }
+
+    footer{
+        width: 100%;
+        height: 500px;
+        background-color: grey;
+    }
+    .items{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        border: 2px solid black;
+        box-sizing: border-box;
+        padding-top: 100px;
+        justify-content: center;
+        align-items: center;
+    }
+    .items-head{
+        text-align: center;
+        width: 30%;
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        font-size: 30px;
+        font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-weight:600;
+        gap: 30px;
+        margin-bottom: 50px;
+    }
+    .items-head-menu{
+        display: flex;
+        justify-content: center;
+        font-size: 15px;
+        gap: 30px;
+        height: 30px;
+    }
+    .items-head-menu span:first-child{
+        border-bottom: 1px solid red;
+        color: red;
+    }
+    .items-card{
+        display: flex;
+        width: 82%;
+        flex-wrap: wrap;
+        justify-items: center;
+        justify-content: space-between;
+    }
+    .card-items{
+        display: flex;
+        flex-direction: column;
+        width: 23%;
+        height: 450px;
+        border: 1px solid black;
+    }
+    .card-head{
+        height: 300px;
+        background-color: #ddd;
+        padding: 25px;
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+        /* align-items: first bas; */
+        box-sizing: border-box;
+    }
+    .card-head span{
+    width: 40px;
+    height: 40px;
+    background-color: #fff;
+    border-radius: 30px;
+    text-align: center;
+    position: relative;
+    padding: 10px;
+    box-sizing: border-box;
+    align-self: flex-end;
+    visibility: collapse;
+    }
+    .card-head:hover span{
+        visibility: visible;
+    }
+    .card-head span:hover {
+        background-color: red;
+    }
+    .card1-head{
+        background-image: url(Public/images/product-5.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .card1-head:hover{
+        background-image: url(Public/images/product555.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .card2-head{
+        background-image: url(Public/images/product-6.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .card2-head:hover{
+        background-image: url(Public/images/basic-dress111.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .card3-head{
+        background-image: url(Public/images/product-7.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .card3-head:hover{
+        background-image: url(Public/images/product-13.jpg);
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+    .card4-head{
+        background-image: url(Public/images/product-8.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .card4-head:hover{
+        background-image: url(Public/images/woman.jpeg);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .card5-head{
+        background-image: url(Public/images/product-9.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .card5-head:hover{
+        background-image: url(Public/images/basic-dress.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .card6-head{
+        background-image: url(Public/images/product-10.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .card6-head:hover{
+        background-image: url(Public/images/bag.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .card7-head{
+        background-image: url(Public/images/product-11.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .card7-head:hover{
+        background-image: url(Public/images/sweat.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .card8-head{
+        background-image: url(Public/images/product-12.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .card8-head:hover{
+        background-image: url(Public/images/product-122.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+
+
