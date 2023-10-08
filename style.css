@@ -604,12 +604,6 @@ font-size: 25px;
     .Sweat-shirts span:last-child{
         font-size: 16px;
     }
-
-    footer{
-        width: 100%;
-        height: 500px;
-        background-color: grey;
-    }
     .items{
         display: flex;
         flex-direction: column;
@@ -765,6 +759,22 @@ font-size: 25px;
         background-repeat: no-repeat;
         background-size: cover;
     }
+    .card-body{
+        display: flex;
+        flex-direction: column;
+        background-color: red;
+    }
 
 
 
+
+
+
+
+
+
+    footer{
+        width: 100%;
+        height: 500px;
+        background-color: grey;
+    }
