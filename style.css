@@ -608,11 +608,12 @@ font-size: 25px;
         display: flex;
         flex-direction: column;
         width: 100%;
-        border: 2px solid black;
+        /* border: 2px solid black; */
         box-sizing: border-box;
         padding-top: 100px;
         justify-content: center;
         align-items: center;
+        padding-bottom: 100px;
     }
     .items-head{
         text-align: center;
@@ -643,13 +644,15 @@ font-size: 25px;
         flex-wrap: wrap;
         justify-items: center;
         justify-content: space-between;
+        
     }
     .card-items{
         display: flex;
         flex-direction: column;
         width: 23%;
         height: 450px;
-        border: 1px solid black;
+        /* border: 1px solid black; */
+        box-sizing: border-box;
     }
     .card-head{
         height: 300px;
@@ -762,9 +765,41 @@ font-size: 25px;
     .card-body{
         display: flex;
         flex-direction: column;
-        background-color: red;
+        gap: 10px;
+        padding-top: 25px;
+        padding-bottom: 25px;
+        font-size: 14px;
+        font-weight: bold;
     }
-
+    .card-name{
+        color: grey;
+        font-size: 12px;
+    }
+    .card-price{
+        color: grey;
+        font-size: 16px;
+    }
+    .items-discover{
+        margin-top: 50px;
+        width: 82%;
+        text-align: center;
+    }
+    .items-discover button{
+        background-color: #fff;
+        border: none;
+        border-bottom: 1px solid black;
+        width: 150px;
+        font-size: 15px;
+        font-weight: 550;
+        font-family: arial;
+    }
+    .items-discover button:hover{
+        border-bottom: 1px solid white;
+        transition-property: border-bottom;
+        transition-timing-function: linear;
+        transition-duration: 0.2s;
+    }
+    
 
 
 
