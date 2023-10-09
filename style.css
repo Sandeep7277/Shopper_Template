@@ -799,17 +799,343 @@ font-size: 25px;
         transition-timing-function: linear;
         transition-duration: 0.2s;
     }
+    /* CSS Deal Timer */
+    .deal-timer{
+        
+        width: 100%;
+        height: 550px;
+        padding-top: 130px;
+        padding-bottom: 130px;
+        box-sizing: border-box;
+        background: url(Public/images/sandle11.jpg) -30px -100px no-repeat, url(Public/images/leaf.png) 160% -200px no-repeat;
+        background-size: 50% 125%;
+        background-color: rgb(241,240,246);
+        display: flex;
+        justify-content: center;
+        
+    }
+    .timer{
+        width: 83%;
+        display: flex;
+        justify-content: end;
+
+    } 
+    .timer-div{
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        /* align-items: center; */
+    }
+    .timer-time{
+        display: flex;
+        justify-content: left;
+        gap: 15px;
+        font-size: 45px;
+        font-weight: 600;
+        font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        color: rgb(241, 67, 67);
+    }
+    .time-name{
+        font-size: 14px;
+        color: gray;
+        align-self: center;
+    }
+    .time{
+        display: flex;
+        flex-direction: column;
+        box-sizing: border-box;
+    }
+    .timer-head{
+        font-size: 32px;
+        font-weight: 600;
+        font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        
+    }
+    .deal-button button{
+        width: 150px;
+        height: 50px;
+        background-color: black;
+        color: #fff;
+        border: none;
+        font-size: 15px;
+
+    }
+
+    /* CSS for Review section */
+    .review{
+        width: 100%;
+        /* height: 600px; */
+        padding-top: 100px;
+        padding-bottom: 100px;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        
+
+    }
+    .review-head{
+        display: flex;
+        flex-direction: column;
+        width: 83%;
+        align-items: center;
+        padding-bottom: 20px;
+    }
+    .review-head span:first-child{
+        font-size: 13px;
+        color: grey;
+        font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-weight: 600;
+    }
+    .review-head span:last-child{
+        font-size: 35px;
+        font-weight: 600;
+        font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        margin-bottom: 20px;
+    }
+    .review-cards{
+        display: flex;
+        flex-wrap: nowrap;
+        width: 83%;
+        padding: 15px;
+        box-sizing: border-box;
+        align-items: start;
+
+    }
+    .rvu-card{
+        border: 1px solid #ddd;
+        margin: 15px;
+        padding: 30px;
+        width: 25%;
+    }
+    .rvu-card-head{
+        display: grid;
+        grid-template-columns: 4fr 8fr;
+        margin-bottom: 20px;
+    }
+    .rvu-card-title{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        font-size: 14px;
+        font-weight: bold;
+    }
+    .rvu-card-title span:first-child{
+        font-size: 13px;
+        color: grey;
+    }
+    .rvu-card-body{
+        font-size: 14px;
+        color: grey;
+        line-height: 25px;
+        word-spacing: 3px;
+        margin: 0;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+    }
+    .rvu-card-body p{
+        margin-bottom: 0px;
+    }
+
+    /* CSS for Highlight */
+    .highlight{
+        width: 100%;
+        /* height: 600px; */
+        padding-top: 100px;
+        padding-bottom: 100px;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #f1f1f1f1;
+    }
+    .highlight-head{
+        display: flex;
+        flex-direction: column;
+        width: 83%;
+        align-items: center;
+        padding-bottom: 60px;
+    }
+    .highlight-head span:first-child{
+        font-size: 35px;
+        font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-weight: 600;
+    }
+    .highlight-head span:last-child{
+        font-size: 18px;
+        color: grey;
+        font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+    }
+    .highlight-img{
+        display: flex;
+        width: 83%;
+        justify-content: space-between;
+        border: 1px solid grey;
+        height: 170px;
+        gap: 10px;
+        margin-bottom: 70px;
+    }
+    .highlight-img1{
+        background-image: url(Public/images/sweat.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 16%;
+    }
+    .highlight-img2{
+        background-image: url(Public/images/watch.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 16%;
+    }
+    .highlight-img3{
+        background-image: url(Public/images/sweat.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 16%;
+    }
+    .highlight-img4{
+        background-image: url(Public/images/printed-shirt-1.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 16%;
+    }
+    .highlight-img5{
+        background-image: url(Public/images/bag.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 16%;
+    }
+    .highlight-img6{
+        background: url(Public/images/product555.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 16%;
+    }
+    .hl-img {
+        display: flex;
+        justify-content: center;
+        gap: 15px;
+        align-items: center;
+        color: #fff;
+        font-size: 13px;
+    }
+    .hl-img span{
+        visibility: collapse;
+    }
     
-
-
-
-
-
-
-
-
+    .hl-img:hover span{
+        visibility: visible;
+    }
+    .hl-img:hover{
+         opacity: 0.6;
+    }
+    .highlight-logo{
+        display: flex;
+        width: 83%;
+        gap: 15px;
+        justify-content: space-between;
+    }
+    
     footer{
         width: 100%;
-        height: 500px;
+        /* height: 500px; */
+        background-color: black;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 100px;
+    }
+    .fupper{
+        width: 83%;
+        display: flex;
+        flex-direction: column;
+
+    }
+    .fhead{
+        color: #fff;
+        font-size: 24px;
+        font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-weight: 600;
+        padding-bottom: 80px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-self: center;
+        gap: 30px;
+        align-items: center;
+        
+    }
+    .fmsg{
+        width: 100%;
+        display: flex;
+        gap: 20px;
+    }
+    .fmsg input{
+        width: 350px;
+        font-size: 15px;
+        padding: 20px;
+        background-color: rgb(68, 68, 68);
+        color: white;
+        font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        /* font-weight: 600; */
+        border: none;
+    }
+    .fmsg input::placeholder{
+        color: #e0dede;
+    }
+    .fmsg button{
+        width: 150px;
         background-color: grey;
+        color: #fff;
+        font-size: 16px;
+        font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-weight: 600;
+    }
+    .fbody{
+        display: flex;
+        color: #fff;
+        justify-content: space-between;
+        margin-bottom: 80px;
+
+    }
+    .flogo{
+        /* width: 20%; */
+        display: flex;
+        flex-direction: column;
+        font-size: 28px;
+        font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-weight: 600;
+        
+    }
+    .flogo .bi{
+        background-color:black;
+        color: #b8b5b5;
+        border: none;
+        padding-left: 0px;
+        font-size: 16px;
+    }
+    .fbody ul,a{
+        list-style-type: none;
+        text-decoration-line: none;
+        padding-left: 0;
+        line-height: 25px;
+        color: #bababa;
+        font-size: 14px;
+    }
+
+    .ffoot{
+        display: flex;
+        justify-content: space-between;
+        color: #767676;
+        width: 83%;
+        padding: 20px;
+        font-size: 12px;
+
     }
