@@ -580,5 +580,56 @@
     </div>
     </footer>
 </div>
+<script type="text/javascript">
+    
+// var daycountvalue = document.getElementsByClassName("day-count")[0].innerText;
+
+/* First Logic
+    var d= new Date();
+    var date=d.getDate();
+    var hour=d.getHours();
+    var minut=d.getMinutes();
+    var sec=d.getSeconds();
+    setInterval(secchange,1000);
+    function secchange(){
+        sec=sec+1;
+        if(sec==60){
+        sec=0;
+        minut=minut+1
+        }
+        if(minut==60){
+            minut=0;
+            hour+=1;
+        }
+        if(hour==24){
+            hour=0;
+            date+=1;
+        }
+        if(date>30){
+            date=d.date();
+        }
+        
+        document.getElementsByClassName("day-count")[0].innerText = 30 - date;
+        document.getElementsByClassName("hour-count")[0].innerText=23 - hour;
+        document.getElementsByClassName("minut-count")[0].innerText= 59 - minut;
+        document.getElementsByClassName("second-count")[0].innerText=59-sec;
+    }*/
+
+    //second Logic
+    setInterval(changeTime,1000);
+    function changeTime(){
+        var d= new Date();
+        var date=d.getDate();
+        var hour=d.getHours();
+        var minut=d.getMinutes();
+        var sec=d.getSeconds();
+       
+        document.getElementsByClassName("day-count")[0].innerText = 30 - date;
+        document.getElementsByClassName("hour-count")[0].innerText=23 - hour;
+        document.getElementsByClassName("minut-count")[0].innerText= 59 - minut;
+        document.getElementsByClassName("second-count")[0].innerText=59-sec;
+    }
+  
+</script>
 </body>
 </html>
